@@ -22,6 +22,13 @@ body{
     cursor: pointer;
     background: rgb(255, 144, 14);
 }
+.secondary-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 20px;
+    color: rgb(114, 114, 114);
+}
 
 
 /* .navbar styles */
@@ -33,7 +40,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 30px;
+    padding: 30px;
 }
 .navbar, .banner{
     max-width: 1440px;
@@ -48,7 +55,6 @@ body{
     list-style: none;
 }
 .nav-links a{
-    display: flex;
     margin-left: 30px;
     text-decoration: none;
     font-size: 18px;
@@ -59,7 +65,8 @@ body{
 /* banner styles */
 
 .banner{
-    padding: 50px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 .banner-texts{
     width: 862px;
@@ -75,9 +82,108 @@ body{
     margin-bottom: 15px;
 }
 .banner-texts p{
-    color: rgb(114, 114, 114);
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     margin-bottom: 20px;
+    color: rgb(114, 114, 114);
+}
+.banner-image{
+    width: 100%;
+}
+
+
+/* our features` */
+#our-features{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 0 50px;
+}
+.our-feature-content{
+    display: flex;
+}
+.feaures-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.features-text{
+    font-size: 45px;
+    font-weight: 700;
+    margin-left: 80px;
+    height: 400px;    
+}
+.features-text-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.features-text h1{
+    margin-bottom: 20px;
+}
+.features-text p{
+    width: 537px;
+}
+.quick-list{
+    font-weight: 500;
+}
+.our-features-color{
+    color: #ff900e;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* responsive media query for mobile*/
+
+@media screen and (max-width: 576px){
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
+    #header-section{
+        width: 100%;
+    }
+    .navbar{
+        padding: 10px;
+    }
+    .navbar h1{
+        font-size: 30px;
+        font-weight: 700;
+        margin-top: 0;
+    }
+    .nav-links li{
+        text-align: center;
+        margin: 5px;
+    }
+    .nav-links a{   
+        margin-left: 0;
+    }
+    .banner{
+        padding: 0 20px 50px 20px;
+    }
+    .banner-texts{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .banner-texts h1{
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    .banner-texts p{
+        color: rgb(114, 114, 114);
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
 }
