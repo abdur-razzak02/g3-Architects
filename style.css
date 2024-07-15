@@ -22,6 +22,12 @@ body{
     cursor: pointer;
     background: rgb(255, 144, 14);
 }
+.section-title{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    color: rgb(19, 19, 19);
+}
 .secondary-text{
     font-size: 16px;
     font-weight: 400;
@@ -93,7 +99,7 @@ body{
 }
 
 
-/* our features` */
+/* our features */
 #our-features{
     max-width: 1440px;
     margin: 0 auto;
@@ -136,8 +142,20 @@ body{
 
 
 
-
-
+/* footer style */
+.footer-text{
+    max-width: 1440px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    font-size: 20px;
+    color: rgb(66, 66, 66);
+    background-color: #fff4e7;
+}
 
 
 
@@ -216,5 +234,25 @@ body{
      }
     .features-text p{
         width: 100%;
+        margin-bottom: 10px;
+     }
+
+     /* features you will love section */
+
+     
+
+
+     /* footer */
+     .footer-text{
+        width: 100%;
+        padding: 20px;
+        font-size: 16px;
+        margin: 0;
+        border-radius: 0;
+     }
+     .footer-text p{
+        width: 100%;
+        padding: 20px;
+        font-size: 16px;
      }
 }
