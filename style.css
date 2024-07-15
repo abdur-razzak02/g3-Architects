@@ -15,7 +15,7 @@ body{
 .btn-primary{
     font-size: 20px;
     font-weight: 600;
-    padding: 20px;
+    padding: 10px 20px;
     border: none;
     color: white;
     border-radius: 8px;
@@ -167,7 +167,8 @@ body{
         margin-left: 0;
     }
     .banner{
-        padding: 0 20px 50px 20px;
+        padding: 0 20px 20px 20px;
+        margin-bottom: 0px;
     }
     .banner-texts{
         width: 100%;
@@ -186,4 +187,34 @@ body{
         font-weight: 400;
         margin-bottom: 20px;
     }
+
+    /* our-feature-content */
+    #our-features{
+        padding: 20px;
+    }
+    .our-feature-content{
+        flex-direction: column;
+    }
+    .feaures-images{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 20px;
+    }
+    .feaures-images img{
+        width: 100%;
+    }
+    .features-text-container{
+        flex-direction: column;
+    }
+    .features-text {
+       width: 100%;
+       margin: 20px;
+    }
+    .features-text h1{
+        font-size: 2.3rem;        
+     }
+    .features-text p{
+        width: 100%;
+     }
 }
