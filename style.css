@@ -139,7 +139,33 @@ body{
 }
 
 
+/* features you will love section */
 
+     
+
+
+
+
+/* our sponsors */
+#our-sponsors{
+    width: 1440px;
+    margin: 0 auto;
+}
+.sponsors-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sponsors-text{
+    width: 542px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsor-images{
+    text-align: center;
+    margin: 50px 0 80px 0;
+    display: flex;
+    justify-content: space-between;
+}
 
 
 /* footer style */
@@ -236,8 +262,6 @@ body{
         width: 100%;
         margin-bottom: 10px;
      }
-
-     /* features you will love section */
 
      
 
