@@ -9,7 +9,6 @@
 body{
     font-family: "Work Sans", sans-serif;
 }
-
 /* shared style */
 
 .btn-primary{
@@ -25,7 +24,7 @@ body{
 .section-title{
     font-size: 45px;
     font-weight: 700;
-    line-height: 53px;
+    line-height: 40px;
     color: rgb(19, 19, 19);
 }
 .secondary-text{
@@ -104,6 +103,7 @@ body{
     max-width: 1440px;
     margin: 0 auto;
     margin-bottom: 100px;
+    margin-top: 50px;
     padding: 0 50px;
 }
 .our-feature-content{
@@ -274,15 +274,12 @@ body{
 
 /* footer style */
 .footer-text{
-    max-width: 1440px;
     height: 100px;
-    margin: 0 auto;
-    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
     font-size: 20px;
+    margin-bottom: 0;
     color: rgb(66, 66, 66);
     background-color: #fff4e7;
 }
@@ -340,6 +337,7 @@ body{
     #our-features{
         padding: 0 20px;
         margin-bottom: 0;
+        margin-top: 20px;
     }
     .our-feature-content{
         flex-direction: column;
@@ -358,10 +356,10 @@ body{
     }
     .features-text {
        width: 100%;
-       margin: 20px;
+       margin: 20px 20px 0 20px;
     }
     .features-text h1{
-        font-size: 2.3rem;        
+        font-size: 2rem;        
      }
     .features-text p{
         width: 100%;
@@ -381,7 +379,7 @@ body{
     }
     .lovely-features-text h1{
         width: 100%;
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     .features-card{
         padding: 20px;
@@ -409,8 +407,12 @@ body{
         width: 100%;
         margin-bottom: 20px;
      }
+     .some-facts-title{
+        margin-bottom: 20px;
+        font-size: 2rem;
+     }
      .facts-title h1{
-        font-size: 2.3rem;
+        font-size: 2rem;
      }
      .facts-card{
         display: flex;
@@ -421,9 +423,8 @@ body{
 
     /* our sponsors */
 
-    #our-sponsors{
-        /* width: 100%;   */
-        padding: 20px;     
+    #our-sponsors{  
+        padding: 0 20px;     
     }
     .sponsors-text{
         width: 100%;
@@ -431,7 +432,7 @@ body{
         text-align: center;
     }
     .sponsors-title{
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     .sponsor-images{
         width: 100%;
@@ -446,17 +447,168 @@ body{
     }
     
      /* footer */
+    .footer-text{
+        padding: 20px;
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }    
+}
 
-     .footer-text{
+/* responsive media query for tablet*/
+
+@media screen and (min-width: 576px) and (max-width: 992px){    
+    #header-section{
         width: 100%;
+    }
+    .navbar{
         padding: 20px;
-        font-size: 16px;
-        margin: 0;
-        border-radius: 0;
-     }
-     .footer-text p{
+    }
+    .nav-links li{
+        text-align: center;
+        margin: 5px;
+    }
+    .banner{
+        padding: 0 20px 20px 20px;
+        margin-bottom: 20px;
+    }
+    .banner-texts{
         width: 100%;
-        padding: 20px;
-        font-size: 16px;
+    }
+
+    /* our-feature-content */
+    #our-features{
+        padding: 0 20px;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+    .our-feature-content{
+        flex-direction: column;
+    }
+    .feaures-images{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 20px;
+    }
+    .feaures-images img{
+        width: 100%;
+    }
+    .features-text {
+       width: 100%;
+       margin: 20px;
+       line-height: 75px;
+    }
+    .features-text p{
+        width: 100%;
+        text-align: justify;    
+     } 
+
+     /* lovely-features */
+
+     #lovely-features{        
+        padding: 0 20px;
+        margin-bottom:30px;
+        flex-direction: column;
      }
+     .lovely-features-text{
+        width: 100%;
+        margin-right: 20px;
+        padding-right: 0px;
+    }  
+    .lovely-features-image{
+        width: 100%;
+    }
+    .lovely-features-image img{
+        width: 100%;
+    }
+    .about-architect{
+        bottom:-50px ;
+        left: -10px;   
+        margin-bottom: 50px;
+    }
+
+     /* some facts */
+
+     #some-facts{
+        padding: 0 20px;
+        margin-bottom: 50px;
+     }   
+     .facts-text{
+        margin-top: 10px;
+        margin-bottom: 50px;
+     }  
+     .facts-card{
+        max-width: 75%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        margin: 0 auto;
+    }    
+
+    /* our sponsors */
+
+    #our-sponsors{
+        padding: 0 20px;     
+    }
+    .sponsor-images{
+        margin-bottom: 50px;
+        width: 20%;
+    }
+    .sponsor-images img{
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+
+/* media screen for laptop or large device */
+
+@media screen and (min-width: 992px) and (max-width: 1440px){
+    #header-section{
+        padding: 0 20px;
+    }
+    .feaures-images{
+        width: 50%;
+    }
+    .feaures-images img{
+        width: 100%;
+    }
+    .features-text-container{
+        width: 50%;
+    }
+    .features-text{
+        margin-left: 50px;
+    }
+    .features-text h1{
+        font-size: 3rem;
+    }
+    .features-text P{
+        width: 100%;
+    }
+    #lovely-features{        
+        padding: 0 20px;
+        margin-bottom:30px;
+     }
+     .lovely-features-text{
+        width: 100%;
+        margin-right: 20px;
+        padding-right: 0px;
+    } 
+    .lovely-features-image{
+        width: 50%;
+    }
+    .lovely-features-image img{
+        width: 100%;
+    } 
+    .about-architect{
+        bottom: 450px;
+        left: -10px;
+        scale: .7;   
+    }
+    #some-facts{
+        padding: 0 20px;
+    }
+    #our-sponsors{
+        padding: 0 20px;
+    }
 }
