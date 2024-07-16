@@ -159,8 +159,7 @@ body{
 .facts-card{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    justify-content: space-between;
-    gap: 80px;
+    justify-content: space-around;
 }
 .card{
     text-align: center;
@@ -168,6 +167,11 @@ body{
     padding: 30px;
     width: 240px;
     height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     border: 1px solid #ff900e;
 }
 .card h4{
