@@ -336,7 +336,7 @@ body {
 
   #our-features {
     padding: 0 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-top: 20px;
   }
   .our-feature-content {
@@ -360,6 +360,7 @@ body {
   }
   .features-text h1 {
     font-size: 2rem;
+    line-height: 40px;
   }
   .features-text p {
     width: 100%;
@@ -380,6 +381,7 @@ body {
   .lovely-features-text h1 {
     width: 100%;
     font-size: 2rem;
+    line-height: 40px;
   }
   .features-card {
     padding: 20px;
@@ -465,6 +467,9 @@ body {
   .navbar {
     padding: 20px;
   }
+  .navbar h1{
+    font-size: 2rem;
+  }
   .nav-links li {
     text-align: center;
     margin: 5px;
@@ -475,6 +480,9 @@ body {
   }
   .banner-texts {
     width: 100%;
+  }
+  .banner-texts h1{
+    font-size: 3rem;
   }
 
   /* our-feature-content */
